@@ -1,0 +1,50 @@
+.header {
+
+    ul {
+        padding: 0;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    li {
+        width: 100%;
+        height: 40px;
+        margin: 0;
+        display: inline-block;
+        list-style: none;
+
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        a:hover {
+            background-color: #F87B7B;
+            color: white;
+        }
+    }
+
+    .home {
+        display: block;
+        width: auto;
+        height: 80px;
+        a {
+            display: block;
+            margin: 5px auto;
+            background-image: url("/img/logo.png");
+            background-position: left;
+            background-size: 154px;
+            height: 60px;
+            width: 154px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media only screen and (min-width: 520px) {
+        ul {
+            li {
+                width: 135px;
+            }
+        }
+    }
+}

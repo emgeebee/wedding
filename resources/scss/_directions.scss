@@ -1,0 +1,39 @@
+.field {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.field:first-of-type {
+    margin: 0;
+}
+
+.value {
+    display: block;
+    text-align: center;
+}
+
+.map {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.map-large {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .map {
+        display: none;
+    }
+
+    .map-large {
+        display: block;
+        width: 800px;
+        transform: translatex(-20%);
+    }
+}

@@ -1,0 +1,27 @@
+
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    font-family: 'Muli', sans-serif;
+    line-height: 2.3em;
+    color: black;
+}
+
+.main {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 520px) {
+    .main {
+        width: 500px;
+    }
+}
+
+@import "header";
+@import "accomodation";
+@import "directions";
+@import "main";
+@import "rsvp";
