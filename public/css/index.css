@@ -116,4 +116,11 @@ li, .li {
   list-style: none; }
 
 .us {
-  width: 300px; }
+  width: 300px;
+  left: -20px;
+  position: relative; }
+
+@media only screen and (min-width: 520px) {
+  .us {
+    position: static;
+    left: 0; } }
