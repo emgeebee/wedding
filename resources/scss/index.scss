@@ -7,20 +7,38 @@
     color: black;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .main {
-    display: block;
     margin: 0 auto;
     width: 300px;
     text-align: center;
+}
+.container {
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 520px) {
     .main {
         width: 500px;
     }
+    .container {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .main {
+        width: 800px;
+    }
 }
 
 @import "header";
+@import "footer";
 @import "accomodation";
 @import "directions";
 @import "main";

@@ -11,16 +11,21 @@
         height: 40px;
         margin: 0;
         display: inline-block;
-        list-style: none;
 
         a {
             display: block;
             height: 100%;
             width: 100%;
         }
-        a:hover {
-            background-color: #F87B7B;
+        a:hover, &.selected a {
             color: white;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: rgba(248, 123, 123, 0.5);
+        }
+        &.selected a {
+            background-color: #F87B7B;
         }
     }
 
@@ -43,7 +48,7 @@
     @media only screen and (min-width: 520px) {
         ul {
             li {
-                width: 135px;
+                width: 145px;
             }
         }
     }

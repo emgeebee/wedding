@@ -10,9 +10,9 @@
                 <header class="header">
                     <ul>
                         <li class="home"><a href="/"></a></li>
-                        <li><a href="/directions">Directions</a></li>
-                        <li><a href="/rsvp">RSVP</a></li>
-                        <li><a href="/accomodation">Accomodation</a></li>
+                        @foreach ($paths as $path=>$name)
+                            <li class="{{$path}} {{$path === $selected ? 'selected' : ''}}"><a href="/{{$path}}">{{$name}}</a></li>
+                        @endforeach
                     </ul>
                 </header>
             @show
@@ -20,7 +20,8 @@
                 @yield('content')
             </div>
         </div>
+        <footer class="footer">
+            &copy; Mat Bishop {{ date('Y') }}.
+        </footer>
     </body>
-    <footer>
-    </footer>
 </html>

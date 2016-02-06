@@ -12,11 +12,16 @@
 */
 
 $app->get('{path:.*?}', function ($path) use ($app) {
-    $path = in_array($path, [
-        'directions',
-        'rsvp',
-        'accomodation'
-        ]) ? $path : 'main';
-    return view($path);
+
+    $paths = [
+        'directions' => 'Directions',
+        'rsvp' => 'RSVP',
+        'accomodation' => 'Accomodation',
+        'on-the-day' => 'On The Day',
+        'on-the-weekend' => 'On The Weekend',
+    ];
+
+    $path = array_key_exists($path, $paths) ? $path : 'main';
+    return view($path, ['selected' => $path, 'paths' => $paths]);
 });
 
